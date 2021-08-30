@@ -34,6 +34,6 @@ This is a portfolio website of Alejandria Canilang
 
 ## Author
 
-- Website - [Alejandria Canilang](https://www.your-site.com)
+- Website - [Alejandria Canilang](https://alejandria98.github.io/)
 - Facebook - [Alejandria Canilang](https://www.facebook.com/alejandria.ac/)
 
