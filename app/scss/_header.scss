@@ -1,0 +1,122 @@
+.header, header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    &.open {
+        .overlay {
+            visibility: visible;
+            display: block;
+        }
+
+        .header__hamburger{
+            > span:first-child {
+                transform: rotate(45deg);
+            }
+        
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+        
+            > span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        opacity: 0;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: linear-gradient($darkblue, transparent);
+    }
+
+
+nav, .nav {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1rem;
+        padding-right: 4rem;
+        padding-bottom: 1rem;
+        padding-left: 4rem;
+        background-color: $white;
+
+        @include breakpoints-down(medium) {
+            padding: 1rem;
+        }
+    }
+
+    &__logo{
+        max-width: 3rem;
+        height: auto;
+
+        @include breakpoints-down(medium) {
+            width: 3rem;
+        }
+    }
+
+    &__hamburger { //Mobile burger to toggle
+        > span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $darkblue;
+            transition: all 300ms ease-in-out;
+            transform-origin: 3px 1px;
+            cursor: pointer;
+
+            &:not(:last-child)
+            {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__links {
+        a {
+            color: $darkblue;
+            text-decoration: line-through;
+            text-decoration-color: transparent;
+            font-weight: 700;
+            font-size: 1.2.4rem;
+            transition: all ease-in-out 200ms;
+    
+            &:hover {
+                color: $skyblue;
+                text-decoration-color: $skyblue;
+            }
+        }
+    }    
+
+    &__linksdesk {
+        a {
+            &:not(:last-child){
+                margin-right: 6rem;
+            }
+        }
+    }
+
+    &__linksmob {
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%;
+        margin-top: 1.5rem;
+        padding: 1.625rem;
+        z-index:99999;
+        border-radius: 5px;
+        transform: translateX(-50%);
+        background-color: $white;
+
+        a {
+            display: block;
+            padding: 0.625rem;
+            text-align: center;
+        } 
+    }
+
+}

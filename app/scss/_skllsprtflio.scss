@@ -1,0 +1,62 @@
+.skllsprtflio {
+    background-color: $lightgray;
+
+    &__con {
+        padding-right: 6rem;
+        padding-left: 6rem;
+
+        @include breakpoints-down(medium) {
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: center;
+
+        @include breakpoints-down(medium) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        position: relative;
+        max-width: 28rem;
+        min-width: 10rem;
+        height: auto;
+        padding: 4rem;
+        border-radius: 0.7rem;
+        box-shadow: 6px 5px $gray;
+        background-color: $white;
+        transition: all 150ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        @include breakpoints-down(medium) {
+            margin-bottom: 3rem;
+        }
+
+        @include breakpoints-up(medium) {    
+            margin: 1rem;
+        }
+
+        img {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: block;
+            margin-right: auto;
+            margin-bottom: 2.5rem;
+            margin-left: auto;
+            max-width: 5rem;
+            width: 50%;
+        }    
+
+        a {
+            color: $darkblue;
+        }
+    }
+}
