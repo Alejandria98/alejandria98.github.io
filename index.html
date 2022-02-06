@@ -37,6 +37,7 @@
         <a href="#intro">HOME</a>
         <a href="#about">ABOUT</a>
         <a href="#skllsprtflio">SKILLS+PORTFOLIO</a>
+        <a href="#certificate">CERTIFICATES</a>
         <a href="#footer">CONTACTME</a>
       </div>
     </nav>
@@ -45,6 +46,7 @@
       <a id="home" href="#intro">HOME</a>
       <a id="aboutme" href="#about">ABOUT</a>
       <a id="skills" href="#skllsprtflio">SKILLS+PORTFOLIO</a>
+      <a id="certf" href="#certificate">CERTIFICATES</a>
       <a id="contact" href="#footer">CONTACTME</a>
     </div>
   </header>
@@ -141,6 +143,41 @@
     </div>
   </section>
 
+  <section id="certificate" class="certificate">
+    <h1 class="title">Certificates</h1>
+    <p class="subtitle">(FreeCodeCamp)</p>
+
+    <div class="slideshow-container fade">
+
+      <!-- Full images with numbers and message Info -->
+      <div class="Containers">
+        <div class="MessageInfo">1 / 2</div>
+        <img src="images/wbdv-cert.png" style="width:100%">
+        <div class="Info">Responsive Web Design</div>
+      </div>
+    
+      <div class="Containers">
+        <div class="MessageInfo">2 / 2</div>
+        <img src="images/jv-cert.jpg" style="width:100%">
+        <div class="Info">Javascript Algorithms & Data Structures</div>
+      </div>
+    
+    
+      <!-- Back and forward buttons -->
+      <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The circles/dots -->
+    <div style="text-align:center">
+      <span class="dots" onclick="currentSlide(1)"></span>
+      <span class="dots" onclick="currentSlide(2)"></span>
+    </div> 
+  </section>
+
+
+
   <footer id="footer" class="footer">
     <div class="footer__con">
       <div class="footer__grid">
@@ -164,9 +201,12 @@
         </div>
       </div>
     </div>
+
   </footer>
 
+
   <script src="app/js/script.js"></script>
+  <script src="app/js/carousel.js"></script>
 </body>
 
 </html>
