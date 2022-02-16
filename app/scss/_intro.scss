@@ -1,0 +1,109 @@
+.intro {
+    background-color: $gray;
+
+    &__con {
+        padding-right: 8rem;
+        padding-left: 8rem;
+
+        @include breakpoints-down(medium) {
+            padding-right: 3rem;
+            padding-left: 3rem;
+        }
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include breakpoints-down(medium) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item1 {
+        justify-content: center;
+
+        @include breakpoints-up(medium) {
+            flex: 1;
+            padding-right: 5rem;
+        }
+
+        @include breakpoints-down(medium) {
+            order: 2;
+            padding-right: 0rem;
+            text-align: center;
+        }
+
+        h1 {
+            width: 116%;
+            font-size: 3rem;
+
+            @include breakpoints-down(medium) {
+                width: auto;
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            padding-bottom: 2rem;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+
+            @include breakpoints-down(medium) {
+                font-size: 1rem;
+            }
+        }
+
+        a {
+            max-width: 2rem;
+            height: auto;
+            padding: 1rem 4rem 1rem 4rem;
+            border-radius: 50px;
+            border: 2px solid $darkblue;
+            background-color: $darkblue;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 300ms ease-in-out;
+            cursor: pointer;
+        
+            &:hover {
+                border: 2px solid $darkblue;
+                color: $darkblue;
+                background-color: $gray;
+            }
+        }
+    }
+
+    &__item2 {
+        justify-content: center;
+        text-align: center;
+
+        @include breakpoints-up(medium) {
+            flex: 1;
+        }
+
+        @include breakpoints-down(medium) {
+            order: 1;
+        }
+
+        img {
+            max-width: 19rem;
+            border-radius: 50%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .fab {
+            color: $darkblue;
+            font-size: 1.5rem;
+
+            &:hover {
+                color: $skyblue;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.about {
+    margin-top: 0;
+    color: $white;
+
+    &__con {
+        padding-right: 7rem;
+        padding-left: 7rem;
+        background-color: $darkblue;
+
+        @include breakpoints-down(medium) {
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include breakpoints-down(medium) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        padding-right: 2rem;
+        padding-left: 2rem;
+
+        @include breakpoints-down(medium) {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+
+        ul {
+            line-height: 1.5rem;
+        }
+    }
+
+    &__gradpic {
+        width: 15rem;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 5px 4px $black;
+
+        @include breakpoints-down(medium) {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
