@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <script src="https://kit.fontawesome.com/07d32cf498.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+  <!-- styles -->
+  <link rel="stylesheet" href="dist/styles.css">
+  <!-- image icons -->
+  <link href="https://www.freepik.com" rel="icon">
+  <link href="https://www.flaticon.com/authors/icon-pond" rel="icon">
+
+  <title>Alejandria Portfolio</title>
+  <link rel="shortcut icon" type="image/png" href="images/a.png">
+</head>
+
+<body>
+  <header class="header">
+    <div class="overlay has-fade"></div>
+
+    <nav class="nav">
+      <img class="header__logo" src="images/a.png">
+
+      <a id="btnHamburger" class="header__hamburger hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <div class="header__linksdesk header__links hide-for-mobile">
+        <a href="#intro">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skllsprtflio">SKILLS+PORTFOLIO</a>
+        <a href="#certificate">CERTIFICATES</a>
+        <a href="#footer">CONTACTME</a>
+      </div>
+    </nav>
+
+    <div class="header__linksmob header__links has-fade hide-for-desktop">
+      <a id="home" href="#intro">HOME</a>
+      <a id="aboutme" href="#about">ABOUT</a>
+      <a id="skills" href="#skllsprtflio">SKILLS+PORTFOLIO</a>
+      <a id="certf" href="#certificate">CERTIFICATES</a>
+      <a id="contact" href="#footer">CONTACTME</a>
+    </div>
+  </header>
+
+  <section id="intro" class="intro">
+    <div class="intro__con container-top-bot">     
+      <div class="intro__grid">
+        <div class="intro__item1">
+          <h1> Hi, I'm an aspiring front-end web developer</h1>
+          <p>
+            I graduated with Bachelor of Science in Information Technology Degree with robust problem-solving skills and
+            passion for design.
+          </p>
+          <a class="button" href="#about">Learn More</a>
+        </div>
+
+        <div class="intro__item2">
+          <img src="images/nica.jpeg">
+          <h4>Alejandria Canilang</h4>
+          <a href="https://github.com/Alejandria98" target="_blank" class="fab fa-github-square"></a>
+          <a href="https://www.linkedin.com/in/alejandria-canilang-b9689621a" target="_blank"
+            class="fab fab fa-linkedin"></a>
+          <a href="https://www.facebook.com/alejandria.ac/" target="_blank" class="fab fa-facebook-square"></a>
+          <a href="https://www.instagram.com/nica.alejandria/" target="_blank" class="fab fa-instagram-square"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about__con container-top-bot">
+      <h1 class="title"> About me</h1>
+      <p class="subtitle"> (My Introduction)</p>
+
+      <div class="about__grid">
+        <div class="about__item">
+          <img class="about__gradpic" src="images/gradpic.JPG">
+        </div>
+
+        <div class="about__item">
+          <i>Alejandria Canilang (23 yrs. old)</i>
+          <h2 class="listitle">Educational Background</h2>
+          <ul>
+            <li>University of Cebu, Banilad Campus</li>
+            <li>Bachelor of Science in Information Technology</li>
+            <li>SY 2014-2018</li>
+            <li>Specialization course in computer programming</li>
+          </ul>
+          <h2 class="listitle">Career Summary</h2>
+          <ul>
+            <li>Al Qalam Al Abyad L.L.C, Dubai, U.A.E</li>
+            <li>From 2019 to April 2021</li>
+            <li>Archives Clerk Cum Secretary</li>
+            <li>Secretarial works related to Property Leasing/Real estate business.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skllsprtflio" class="skllsprtflio">
+    <div class="skllsprtflio__con container-top-bot">
+      <h1 class="title">Skills + Portfolio</h1>
+      <p class="subtitle"> (My Technical Skills)</p>
+
+      <div class="skllsprtflio__grid">
+        <div class="skllsprtflio__item">
+          <img src="images/skills.png">
+          <h2 class="listitle">Skills</h2>
+          <h4>Coding Languages</h4>
+          <ul>
+            <li>HTML, CSS, JavaScript, Java, MySQL, Php, C#, C</li>
+          </ul>
+          <h4>Frameworks / Systems</h4>
+          <ul>
+            <li>SASS, VS Code, Sublime Text, Visual Studio</li>
+          </ul>
+        </div>
+
+        <div class="skllsprtflio__item">
+          <img src="images/portfolio.png">
+          <h2 class="listitle">Portfolio</h2>
+          <h4>Fylo dark theme landing page</h4>
+          <ul>
+            <li><a href="https://github.com/Alejandria98/Fylo-by-Alejandria" target="_blank">Challenge by Frontend
+                Mentor.</a></li>
+          </ul>
+          <h4>Big Fat Straws</h4>
+          <ul>
+            <li><a href="https://github.com/Alejandria98/bigfatstraws" target="_blank">Milk tea shop website</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificate" class="certificate">
+    <h1 class="title">Certificates</h1>
+    <p class="subtitle">(FreeCodeCamp)</p>
+
+    <div class="slideshow-container fade">
+
+      <!-- Full images with numbers and message Info -->
+      <div class="Containers">
+        <div class="MessageInfo">1 / 2</div>
+        <img src="images/wbdv-cert.png" style="width:100%">
+        <div class="Info">Responsive Web Design</div>
+      </div>
+    
+      <div class="Containers">
+        <div class="MessageInfo">2 / 2</div>
+        <img src="images/jv-cert.jpg" style="width:100%">
+        <div class="Info">Javascript Algorithms & Data Structures</div>
+      </div>
+    
+    
+      <!-- Back and forward buttons -->
+      <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The circles/dots -->
+    <div style="text-align:center">
+      <span class="dots" onclick="currentSlide(1)"></span>
+      <span class="dots" onclick="currentSlide(2)"></span>
+    </div> 
+  </section>
+
+
+
+  <footer id="footer" class="footer">
+    <div class="footer__con">
+      <div class="footer__grid">
+        <div class="footer__item">
+          <img src="images/a.png">
+        </div>
+
+        <div class="footer__item">
+          <h4>Contact Me</h4>
+          <h5>+639-560380952</h5>
+          <h5>nicaniks.ac@gmail.com</h5>
+          <h5>V&G Subd. Nangka Consolacion Cebu</h5>
+        </div>
+
+        <div class="footer__item">
+          <a href="https://github.com/Alejandria98" target="_blank"><i class="fab fa-github-square"></i></a>
+          <a href="https://www.linkedin.com/in/alejandria-canilang-b9689621a" target="_blank"><i class="fab fa-linkedin socials"></i></a>
+          <a href="https://www.facebook.com/alejandria.ac/" target="_blank"><i class="fab fa-facebook-square socials"></i></a>
+          <a href="https://www.instagram.com/nica.alejandria/" target="_blank"><i class="fab fa-instagram-square socials"></i></a>
+          <h5>Coded by Alejandria Canilang | 2021</h5>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script src="app/js/script.js"></script>
+  <script src="app/js/carousel.js"></script>
+</body>
+
+</html>
