@@ -1,4 +1,4 @@
-# Alejandri Canilang's Portfolio
+# Alejandria Canilang's Portfolio
 
 This is a portfolio website of Alejandria Canilang
 
