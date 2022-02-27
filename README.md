@@ -16,10 +16,8 @@ This is a portfolio website of Alejandria Canilang
 
 
 ### Screenshot
-
-![](design/desktop_design.png)
-![](design/mobile_design.png)
-![](design/tablet_design.png)
+![desktop_design](https://user-images.githubusercontent.com/75117884/155871174-2b6c5767-bfbf-486e-bf70-b4a3d8ecc2e6.png)
+![mobile_design](https://user-images.githubusercontent.com/75117884/155871177-e4df84dc-0846-4728-970b-c3351d2a8261.png)
 
 ### Links
 
